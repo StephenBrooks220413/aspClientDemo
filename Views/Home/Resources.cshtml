@@ -2,9 +2,40 @@
     ViewData["Title"] = "Resources";
 }
 
-<div class="container text-center mt-5">
+<div class="container mt-5">
     <br /><br />
-    <h1>@ViewData["Title"]</h1>
-
-    <p>Use this page to detail your site's resource documents.</p>
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <br /><br />
+    <p class="lead text-center">
+        Here you will find the most common downloaded documents
+        for all of our consumers. If you need something that is 
+        not shown, then contact us. If you have anything you want 
+        to share with us or need to update your info, fill out a 
+        word document with your signature and Notary, then upload 
+        and send to us.
+        <br /><br />
+        <a href="#" class="btn btn-info" download >Billing Documents</a>
+        <a href="#" class="btn btn-info" download >Account Documents</a>
+        <a href="#" class="btn btn-info" download >Personal Documents</a>
+    </p>
+    <br /><br />
+    <form>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Upload(s)</label>
+          <input type="file" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Your Message</label>
+          <textarea rows="4" cols="8" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"></textarea>
+        </div>
+        <button class="btn btn-primary form-control">SEND</button>
+    </form>
 </div>
